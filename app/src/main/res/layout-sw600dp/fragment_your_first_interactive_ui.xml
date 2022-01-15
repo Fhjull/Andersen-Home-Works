@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/toast_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toast_button_text"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/zero_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toast_button"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/gray"
+        android:text="@string/zero_button_text"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/count_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zero_button"
+        android:layout_marginTop="40dp"
+        android:text="@string/count_button_text"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/count_button"
+        android:background="@color/yellow"
+        android:text="@string/count_text"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="300sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/flag_width"
+    android:layout_height="@dimen/flag_width"
+    android:layout_marginTop="@dimen/flag_separator"
+    android:layout_marginBottom="@dimen/flag_separator"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="@dimen/flag_padding_border">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/denmark_switzerland_red">
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="168dp"
+            android:layout_gravity="center"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="168dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/white" />
+
+    </FrameLayout>
+
+</LinearLayout>

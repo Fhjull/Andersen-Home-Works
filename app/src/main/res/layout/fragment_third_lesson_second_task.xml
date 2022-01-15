@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_regular"
+        android:orientation="vertical">
+
+        <include layout="@layout/flag_austrian" />
+        <include layout="@layout/flag_poland" />
+        <include layout="@layout/flag_italy" />
+        <include layout="@layout/flag_columbia" />
+        <include layout="@layout/flag_madagascar" />
+        <include layout="@layout/flag_thailand" />
+        <include layout="@layout/flag_denmark" />
+        <include layout="@layout/flag_switzerland" />
+
+    </LinearLayout>
+
+</ScrollView>

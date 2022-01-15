@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/flag_width"
+    android:layout_height="@dimen/flag_height"
+    android:layout_marginTop="@dimen/flag_separator"
+    android:layout_marginBottom="@dimen/flag_separator"
+    android:background="@color/black"
+    android:padding="@dimen/flag_padding_border">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/italian_green" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/italian_white" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/italian_red" />
+
+</LinearLayout>

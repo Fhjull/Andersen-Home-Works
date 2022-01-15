@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="ru.dillab.andersenhomeworks.ui.main.MainFragment"
+        android:label="@string/main_fragment_title"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_secondLessonFragment"
+            app:destination="@id/secondLessonFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_thirdLessonFragment"
+            app:destination="@id/thirdLessonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondLessonFragment"
+        android:name="ru.dillab.andersenhomeworks.ui.secondlesson.SecondLessonFragment"
+        android:label="@string/second_lesson_fragment_title"
+        tools:layout="@layout/fragment_second_lesson">
+        <action
+            android:id="@+id/action_secondLessonFragment_to_yourFirstInteractiveUiFragment"
+            app:destination="@id/yourFirstInteractiveUiFragment" />
+        <action
+            android:id="@+id/action_secondLessonFragment_to_scrollingTextAppFragment"
+            app:destination="@id/scrollingTextAppFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yourFirstInteractiveUiFragment"
+        android:name="ru.dillab.andersenhomeworks.ui.secondlesson.yourfirstinteractiveui.YourFirstInteractiveUiFragment"
+        android:label="@string/your_first_interactive_ui_fragment_title"
+        tools:layout="@layout/fragment_your_first_interactive_ui" />
+    <fragment
+        android:id="@+id/scrollingTextAppFragment"
+        android:name="ru.dillab.andersenhomeworks.ui.secondlesson.scrollingtextapp.ScrollingTextAppFragment"
+        android:label="@string/scrolling_text_app_fragment_title"
+        tools:layout="@layout/fragment_scrolling_text_app" />
+    <fragment
+        android:id="@+id/thirdLessonFragment"
+        android:name="ru.dillab.andersenhomeworks.ui.thirdlesson.ThirdLessonFragment"
+        android:label="@string/third_lesson_fragment_title"
+        tools:layout="@layout/fragment_third_lesson">
+        <action
+            android:id="@+id/action_thirdLessonFragment_to_secondLessonFirstTaskFragment"
+            app:destination="@id/secondLessonFirstTaskFragment" />
+        <action
+            android:id="@+id/action_thirdLessonFragment_to_secondLessonSecondTaskFragment"
+            app:destination="@id/secondLessonSecondTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondLessonFirstTaskFragment"
+        android:name="ru.dillab.andersenhomeworks.ui.thirdlesson.firsttask.SecondLessonFirstTaskFragment"
+        android:label="@string/third_lesson_first_task_fragment_title"
+        tools:layout="@layout/fragment_third_lesson_first_task" />
+    <fragment
+        android:id="@+id/secondLessonSecondTaskFragment"
+        android:name="ru.dillab.andersenhomeworks.ui.thirdlesson.secondtask.SecondLessonSecondTaskFragment"
+        android:label="@string/third_lesson_second_task_fragment_title"
+        tools:layout="@layout/fragment_third_lesson_second_task" />
+</navigation>

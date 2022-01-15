@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    default dimensions  -->
+    <dimen name="margin_regular">8dp</dimen>
+
+    <!--    scrolling text app  -->
+    <dimen name="padding_regular">10dp</dimen>
+    <dimen name="line_spacing">5sp</dimen>
+
+    <!--    third lesson second task    -->
+    <dimen name="flag_padding_border">1dp</dimen>
+    <dimen name="flag_width">300dp</dimen>
+    <dimen name="flag_height">200dp</dimen>
+    <dimen name="flag_separator">25dp</dimen>
+
+
+
+    <dimen name="flag_one_third_height">67dp</dimen>
+    <dimen name="flag_one_half_height">150dp</dimen>
+    <dimen name="flag_five_eights_height">94dp</dimen>
+
+
+</resources>
