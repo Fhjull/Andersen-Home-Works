@@ -53,12 +53,12 @@
     </fragment>
     <fragment
         android:id="@+id/secondLessonFirstTaskFragment"
-        android:name="ru.dillab.andersenhomeworks.ui.thirdlesson.firsttask.SecondLessonFirstTaskFragment"
+        android:name="ru.dillab.andersenhomeworks.ui.thirdlesson.firsttask.ThirdLessonFirstTaskFragment"
         android:label="@string/third_lesson_first_task_fragment_title"
         tools:layout="@layout/fragment_third_lesson_first_task" />
     <fragment
         android:id="@+id/secondLessonSecondTaskFragment"
-        android:name="ru.dillab.andersenhomeworks.ui.thirdlesson.secondtask.SecondLessonSecondTaskFragment"
+        android:name="ru.dillab.andersenhomeworks.ui.thirdlesson.secondtask.ThirdLessonSecondTaskFragment"
         android:label="@string/third_lesson_second_task_fragment_title"
         tools:layout="@layout/fragment_third_lesson_second_task" />
 </navigation>

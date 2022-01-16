@@ -10,22 +10,22 @@ import ru.dillab.andersenhomeworks.R
 import ru.dillab.andersenhomeworks.databinding.FragmentSecondLessonBinding
 
 class SecondLessonFragment : Fragment() {
-    private var binding: FragmentSecondLessonBinding? = null
+    private var _binding: FragmentSecondLessonBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val fragmentBinding = FragmentSecondLessonBinding.inflate(inflater, container, false)
-        binding = fragmentBinding
-        return fragmentBinding.root
+        _binding = FragmentSecondLessonBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding?.fundamentals012Button?.setOnClickListener { navigateToYourFirstInteractiveUiFragment() }
-        binding?.scrollingTextAppButton?.setOnClickListener { navigateToScrollingTextAppFragment() }
+        binding.fundamentals012Button.setOnClickListener { navigateToYourFirstInteractiveUiFragment() }
+        binding.scrollingTextAppButton.setOnClickListener { navigateToScrollingTextAppFragment() }
     }
 
     private fun navigateToYourFirstInteractiveUiFragment() {
@@ -38,6 +38,6 @@ class SecondLessonFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        binding = null
+        _binding = null
     }
 }

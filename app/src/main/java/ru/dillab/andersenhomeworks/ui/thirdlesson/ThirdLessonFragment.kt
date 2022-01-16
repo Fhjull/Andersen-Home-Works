@@ -9,24 +9,23 @@ import androidx.navigation.fragment.findNavController
 import ru.dillab.andersenhomeworks.R
 import ru.dillab.andersenhomeworks.databinding.FragmentThirdLessonBinding
 
-
 class ThirdLessonFragment : Fragment() {
-    private var binding: FragmentThirdLessonBinding? = null
+    private var _binding: FragmentThirdLessonBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val fragmentBinding = FragmentThirdLessonBinding.inflate(inflater, container, false)
-        binding = fragmentBinding
-        return fragmentBinding.root
+        _binding = FragmentThirdLessonBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding?.firstTaskButton?.setOnClickListener { navigateToYourFirstInteractiveUiFragment() }
-        binding?.secondTaskButton?.setOnClickListener { navigateToScrollingTextAppFragment() }
+        binding.firstTaskButton.setOnClickListener { navigateToYourFirstInteractiveUiFragment() }
+        binding.secondTaskButton.setOnClickListener { navigateToScrollingTextAppFragment() }
     }
 
     private fun navigateToYourFirstInteractiveUiFragment() {
@@ -39,6 +38,6 @@ class ThirdLessonFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        binding = null
+        _binding = null
     }
 }

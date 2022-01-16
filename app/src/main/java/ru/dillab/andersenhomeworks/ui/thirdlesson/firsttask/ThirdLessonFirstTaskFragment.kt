@@ -17,17 +17,16 @@ import com.bumptech.glide.request.target.Target
 import ru.dillab.andersenhomeworks.R
 import ru.dillab.andersenhomeworks.databinding.FragmentThirdLessonFirstTaskBinding
 
-class SecondLessonFirstTaskFragment : Fragment() {
-    private var binding: FragmentThirdLessonFirstTaskBinding? = null
+class ThirdLessonFirstTaskFragment : Fragment() {
+    private var _binding: FragmentThirdLessonFirstTaskBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val fragmentBinding =
-            FragmentThirdLessonFirstTaskBinding.inflate(inflater, container, false)
-        binding = fragmentBinding
-        return fragmentBinding.root
+        _binding = FragmentThirdLessonFirstTaskBinding.inflate(layoutInflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -37,7 +36,7 @@ class SecondLessonFirstTaskFragment : Fragment() {
     }
 
     private fun getStringOnEnterPressedAndLoadImage() {
-        binding?.thirdLessonFirstTaskEditText?.setOnEditorActionListener { v, actionId, event ->
+        binding.thirdLessonFirstTaskEditText.setOnEditorActionListener { v, actionId, event ->
             if (actionId == EditorInfo.IME_ACTION_SEARCH ||
                 actionId == EditorInfo.IME_ACTION_DONE ||
                 event != null &&
@@ -54,7 +53,7 @@ class SecondLessonFirstTaskFragment : Fragment() {
     }
 
     private fun loadImage(url: String) {
-        val image = binding?.thirdLessonFirstTaskImage!!
+        val imageView = binding.thirdLessonFirstTaskImage
         Glide.with(this)
             .load(url)
             .placeholder(R.drawable.placeholder_image)
@@ -85,7 +84,7 @@ class SecondLessonFirstTaskFragment : Fragment() {
                     }
                 }
             )
-            .into(image)
+            .into(imageView)
     }
 
     fun showErrorToast(message: String?) {
@@ -94,6 +93,6 @@ class SecondLessonFirstTaskFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        binding = null
+        _binding = null
     }
 }

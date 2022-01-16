@@ -9,6 +9,7 @@
 На portrait ориентации сделал с помощью ConstraintLayout
 На landscape ориентации сделал с помощью LinearLayout
 На layout для планшетов сделал с помощью RelativeLayout
+Реализована нопка SAY HELLO, которая открывает новое активити и передает туда текущий счет.
 Задание 2: "Scrolling text app"
 
 Занятие 3
