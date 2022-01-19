@@ -25,6 +25,7 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.secondLessonButton.setOnClickListener { navigateToSecondLessonFragment() }
         binding.thirdLessonButton.setOnClickListener { navigateToThirdLessonFragment() }
+        binding.forthLessonButton.setOnClickListener { navigateToClocksFragment() }
     }
 
     private fun navigateToSecondLessonFragment() {
@@ -33,6 +34,10 @@ class MainFragment : Fragment() {
 
     private fun navigateToThirdLessonFragment() {
         findNavController().navigate(R.id.action_mainFragment_to_thirdLessonFragment)
+    }
+
+    private fun navigateToClocksFragment() {
+        findNavController().navigate(R.id.action_mainFragment_to_clocksFragment)
     }
 
     override fun onDestroyView() {

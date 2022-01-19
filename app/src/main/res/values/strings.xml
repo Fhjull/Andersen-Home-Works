@@ -6,6 +6,7 @@
     <string name="main_fragment_upper_text">Евгений Смирнов</string>
     <string name="second_lesson_button_text">Занятие 2</string>
     <string name="third_lesson_button_text">Занятие 3</string>
+    <string name="forth_lesson_button_text">Занятие 4</string>
 
     <!--    second_lesson_fragment  -->
     <string name="second_lesson_fragment_title">Занятие 2</string>
@@ -64,5 +65,7 @@ This volume starts with the first new Beatle song, “Free as a Bird” (based o
     <!--    third_lesson_second_task_fragment  -->
     <string name="third_lesson_second_task_fragment_title">Задание 2</string>
     <string name="hello_toast_activity_text">Hello!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
