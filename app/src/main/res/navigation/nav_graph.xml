@@ -75,7 +75,7 @@
         tools:layout="@layout/activity_hello_toast" />
     <fragment
         android:id="@+id/clocksFragment"
-        android:name="ru.dillab.andersenhomeworks.ui.forthlesson.ClocksFragment"
+        android:name="ru.dillab.andersenhomeworks.ui.fourthlesson.ClocksFragment"
         android:label="fragment_clocks"
         tools:layout="@layout/fragment_clocks" />
 </navigation>

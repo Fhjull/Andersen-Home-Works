@@ -1,4 +1,4 @@
-package ru.dillab.andersenhomeworks.ui.forthlesson
+package ru.dillab.andersenhomeworks.ui.fourthlesson
 
 import android.content.Context
 import android.content.res.TypedArray
