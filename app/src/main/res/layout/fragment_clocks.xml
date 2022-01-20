@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    tools:context=".ui.fourthlesson.ClocksFragment">
-
+    android:gravity="center">
 
     <ru.dillab.andersenhomeworks.ui.fourthlesson.CustomClockView
-
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        app:hand_hour_color="@color/green"
-        app:hand_minute_color="@color/red"
-        app:hand_second_color="@color/columbian_blue" />
-
+        android:layout_width="250dp"
+        android:layout_height="250dp" />
 
 </LinearLayout>
