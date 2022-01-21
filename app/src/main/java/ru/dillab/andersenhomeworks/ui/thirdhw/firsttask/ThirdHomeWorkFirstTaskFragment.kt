@@ -1,4 +1,4 @@
-package ru.dillab.andersenhomeworks.ui.thirdlesson.firsttask
+package ru.dillab.andersenhomeworks.ui.thirdhw.firsttask
 
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -15,17 +15,17 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import ru.dillab.andersenhomeworks.R
-import ru.dillab.andersenhomeworks.databinding.FragmentThirdLessonFirstTaskBinding
+import ru.dillab.andersenhomeworks.databinding.FragmentThirdHomeWorkFirstTaskBinding
 
-class ThirdLessonFirstTaskFragment : Fragment() {
-    private var _binding: FragmentThirdLessonFirstTaskBinding? = null
+class ThirdHomeWorkFirstTaskFragment : Fragment() {
+    private var _binding: FragmentThirdHomeWorkFirstTaskBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentThirdLessonFirstTaskBinding.inflate(layoutInflater, container, false)
+        _binding = FragmentThirdHomeWorkFirstTaskBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 
@@ -36,7 +36,7 @@ class ThirdLessonFirstTaskFragment : Fragment() {
     }
 
     private fun getStringOnEnterPressedAndLoadImage() {
-        binding.thirdLessonFirstTaskEditText.setOnEditorActionListener { v, actionId, event ->
+        binding.thirdHomeWorkFirstTaskEditText.setOnEditorActionListener { v, actionId, event ->
             if (actionId == EditorInfo.IME_ACTION_SEARCH ||
                 actionId == EditorInfo.IME_ACTION_DONE ||
                 event != null &&
@@ -53,7 +53,7 @@ class ThirdLessonFirstTaskFragment : Fragment() {
     }
 
     private fun loadImage(url: String) {
-        val imageView = binding.thirdLessonFirstTaskImage
+        val imageView = binding.thirdHomeWorkFirstTaskImage
         Glide.with(this)
             .load(url)
             .placeholder(R.drawable.placeholder_image)

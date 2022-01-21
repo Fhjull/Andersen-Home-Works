@@ -14,7 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndersenHomeWorks">
         <activity
-            android:name=".ui.secondlesson.yourfirstinteractiveui.HelloToastActivity"
+            android:name=".ui.secondhw.shoppinglistapp.AddItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.secondhw.shoppinglistapp.ShoppingListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.secondhw.yourfirstinteractiveui.HelloToastActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

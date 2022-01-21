@@ -23,16 +23,16 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.secondLessonButton.setOnClickListener { navigateToSecondLessonFragment() }
-        binding.thirdLessonButton.setOnClickListener { navigateToThirdLessonFragment() }
-        binding.forthLessonButton.setOnClickListener { navigateToClocksFragment() }
+        binding.secondHomeWorkButton.setOnClickListener { navigateToSecondHomeWorkFragment() }
+        binding.thirdHomeWorkButton.setOnClickListener { navigateToThirdHomeWorkFragment() }
+        binding.forthHomeWorkButton.setOnClickListener { navigateToClocksFragment() }
     }
 
-    private fun navigateToSecondLessonFragment() {
+    private fun navigateToSecondHomeWorkFragment() {
         findNavController().navigate(R.id.action_mainFragment_to_secondLessonFragment)
     }
 
-    private fun navigateToThirdLessonFragment() {
+    private fun navigateToThirdHomeWorkFragment() {
         findNavController().navigate(R.id.action_mainFragment_to_thirdLessonFragment)
     }
 

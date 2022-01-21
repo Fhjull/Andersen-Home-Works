@@ -1,4 +1,4 @@
-package ru.dillab.andersenhomeworks.ui.secondlesson.yourfirstinteractiveui
+package ru.dillab.andersenhomeworks.ui.secondhw.yourfirstinteractiveui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -18,5 +18,12 @@ class HelloToastActivity : AppCompatActivity() {
 
         val count = intent.extras?.getInt("Count")
         binding.helloToastActivityText.text = getString(R.string.toast_message, count)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

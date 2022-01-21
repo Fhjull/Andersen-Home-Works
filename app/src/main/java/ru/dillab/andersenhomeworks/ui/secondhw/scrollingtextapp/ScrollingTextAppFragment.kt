@@ -1,4 +1,4 @@
-package ru.dillab.andersenhomeworks.ui.secondlesson.scrollingtextapp
+package ru.dillab.andersenhomeworks.ui.secondhw.scrollingtextapp
 
 import androidx.fragment.app.Fragment
 import ru.dillab.andersenhomeworks.R

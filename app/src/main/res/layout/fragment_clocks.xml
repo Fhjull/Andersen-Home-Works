@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:gravity="center">
 
-    <ru.dillab.andersenhomeworks.ui.fourthlesson.CustomClockView
+    <ru.dillab.andersenhomeworks.ui.fourthhw.CustomClockView
         android:layout_width="250dp"
         android:layout_height="250dp" />
 

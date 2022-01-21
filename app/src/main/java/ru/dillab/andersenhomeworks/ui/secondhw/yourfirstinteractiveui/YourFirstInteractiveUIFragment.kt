@@ -1,4 +1,4 @@
-package ru.dillab.andersenhomeworks.ui.secondlesson.yourfirstinteractiveui
+package ru.dillab.andersenhomeworks.ui.secondhw.yourfirstinteractiveui
 
 import android.content.Intent
 import android.graphics.Color
@@ -25,7 +25,7 @@ class YourFirstInteractiveUiFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.toastButton.setOnClickListener { goToHelloToastActivity() }
+        binding.toastButton.setOnClickListener { navigateToHelloToastActivity() }
         binding.zeroButton.setOnClickListener {
             setCountToZero()
             setBackgroundColorGreyTo(it)
@@ -37,7 +37,7 @@ class YourFirstInteractiveUiFragment : Fragment() {
         }
     }
 
-    private fun goToHelloToastActivity() {
+    private fun navigateToHelloToastActivity() {
         Intent(context, HelloToastActivity::class.java).also {
             it.putExtra("Count", count)
             startActivity(it)

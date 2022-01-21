@@ -7,15 +7,15 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/third_lesson_first_task_edit_text"
+        android:id="@+id/third_home_work_first_task_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="8dp"
-        android:hint="@string/third_lesson_first_task_edit_text_hint"
+        android:hint="@string/third_home_work_first_task_edit_text_hint"
         android:inputType="textUri" />
 
     <ImageView
-        android:id="@+id/third_lesson_first_task_image"
+        android:id="@+id/third_home_work_first_task_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

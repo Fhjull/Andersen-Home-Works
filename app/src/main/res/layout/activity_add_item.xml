@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".ui.secondhw.shoppinglistapp.AddItemActivity">
+
+        <Button
+            android:id="@+id/cheese_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheese_button_text" />
+
+        <Button
+            android:id="@+id/rice_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rice_button_text" />
+
+        <Button
+            android:id="@+id/apples_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apples_button_text" />
+
+        <Button
+            android:id="@+id/orange_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/orange_button_text" />
+
+        <Button
+            android:id="@+id/bread_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bread_button_text" />
+
+        <Button
+            android:id="@+id/water_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/water_button_text" />
+
+        <Button
+            android:id="@+id/juice_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/juice_button_text" />
+
+        <Button
+            android:id="@+id/Cookies_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cookies_button_text" />
+
+        <Button
+            android:id="@+id/tomato_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tomato_button_text" />
+
+        <Button
+            android:id="@+id/onion_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/onion_button_text" />
+
+    </LinearLayout>
+
+</ScrollView>
+

@@ -1,4 +1,4 @@
-package ru.dillab.andersenhomeworks.ui.fourthlesson
+package ru.dillab.andersenhomeworks.ui.fourthhw
 
 import android.content.Context
 import android.graphics.Canvas

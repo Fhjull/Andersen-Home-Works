@@ -4,15 +4,17 @@
     <!--    main_fragment   -->
     <string name="main_fragment_title">Мои домашние работы</string>
     <string name="main_fragment_upper_text">Евгений Смирнов</string>
-    <string name="second_lesson_button_text">Занятие 2</string>
-    <string name="third_lesson_button_text">Занятие 3</string>
-    <string name="forth_lesson_button_text">Занятие 4</string>
+    <string name="second_home_work_button_text">Домашняя работа №2</string>
+    <string name="third_home_work_button_text">Домашняя работа №3</string>
+    <string name="fourth_home_work_button_text">Домашняя работа №4</string>
 
     <!--    second_lesson_fragment  -->
-    <string name="second_lesson_fragment_title">Занятие 2</string>
-    <string name="second_lesson_fragment_upper_text">Темы: Android Studio, Project setup, Activity, Screen rotation, resources</string>
+    <string name="second_home_work_fragment_title">Домашняя работа №2</string>
+    <string name="second_home_work_fragment_upper_text">Темы: Android Studio, Project setup, Activity, Screen rotation, resources</string>
     <string name="fundamentals_01_2_button_text">Android fundamentals 01.2\nYour first interactive UI</string>
     <string name="scrolling_text_app_button_text">Android fundamentals 01.3\nScrolling text App</string>
+    <string name="shopping_list_app_button_text">Android fundamentals 02.2\nCode Challenge\nShopping-List App</string>
+    <string name="on_save_instance_state_button_text">Android fundamentals 02.2\nHome Work - onSaveInstanceState()</string>
 
     <!--    your_first_interactive_ui_fragment  -->
     <string name="your_first_interactive_ui_fragment_title">Hello Toast</string>
@@ -52,20 +54,40 @@ This volume starts with the first new Beatle song, “Free as a Bird” (based o
 </string>
     <string name="add_comment">Add comment</string>
 
+    <!--    Shopping-List App   -->
+    <string name="shopping_list_activity_title">Shopping List</string>
+    <string name="add_item_activity_title">Choose Item</string>
+    <string name="add_item_button_text">Add Item</string>
+    <string name="cheese_button_text">Cheese</string>
+    <string name="rice_button_text">Rice</string>
+    <string name="apples_button_text">Apples</string>
+    <string name="orange_button_text">Orange</string>
+    <string name="bread_button_text">Bread</string>
+    <string name="water_button_text">Water</string>
+    <string name="juice_button_text">Juice</string>
+    <string name="cookies_button_text">Cookies</string>
+    <string name="tomato_button_text">Tomato</string>
+    <string name="onion_button_text">Onion</string>
+
+    <!--    onSaveInstanceState Fragment    -->
+    <string name="on_save_instance_state_fragment_title">onSaveInstanceState()</string>
+    <string name="on_save_instance_state_count_button_text">Count</string>
+
     <!--    third_lesson_fragment  -->
-    <string name="third_lesson_fragment_title">Занятие 3</string>
-    <string name="third_lesson_fragment_upper_text">Темы: Главные View (Button, ImageView, EditText, TextView) Main containers, ConstraintLayout</string>
+    <string name="third_home_work_fragment_title">Домашняя работа №3</string>
+    <string name="third_home_work_fragment_upper_text">Темы: Главные View (Button, ImageView, EditText, TextView) Main containers, ConstraintLayout</string>
     <string name="first_task_button_text">Задание 1\nэкран с 1 EditText и 1 ImageView</string>
     <string name="second_task_button_text">Задание 2\nотобразить на экране флаги</string>
 
     <!--    third_lesson_first_task_fragment  -->
-    <string name="third_lesson_first_task_fragment_title">Задание 1</string>
-    <string name="third_lesson_first_task_edit_text_hint">Вставьте ссылку на картинку</string>
+    <string name="third_home_work_first_task_fragment_title">Задание 1</string>
+    <string name="third_home_work_first_task_edit_text_hint">Вставьте ссылку на картинку</string>
 
     <!--    third_lesson_second_task_fragment  -->
-    <string name="third_lesson_second_task_fragment_title">Задание 2</string>
+    <string name="third_home_work_second_task_fragment_title">Задание 2</string>
     <string name="hello_toast_activity_text">Hello!</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    fourth_home_work_fragment    -->
+    <string name="fourth_home_work_fragment_title">Домашняя работа №4</string>
 
 </resources>

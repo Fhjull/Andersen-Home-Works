@@ -1,4 +1,4 @@
-package ru.dillab.andersenhomeworks.ui.fourthlesson
+package ru.dillab.andersenhomeworks.ui.fourthhw
 
 import androidx.fragment.app.Fragment
 import ru.dillab.andersenhomeworks.R

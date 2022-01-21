@@ -7,10 +7,10 @@
     android:layout_margin="@dimen/margin_regular">
 
     <TextView
-        android:id="@+id/second_lesson_fragment_upper_text"
+        android:id="@+id/second_home_work_fragment_upper_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/second_lesson_fragment_upper_text"
+        android:text="@string/second_home_work_fragment_upper_text"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +25,7 @@
         android:text="@string/fundamentals_01_2_button_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/second_lesson_fragment_upper_text" />
+        app:layout_constraintTop_toBottomOf="@id/second_home_work_fragment_upper_text" />
 
     <Button
         android:id="@+id/scrolling_text_app_button"
@@ -37,5 +37,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/fundamentals_012_button" />
+
+    <Button
+        android:id="@+id/shopping_list_app_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/shopping_list_app_button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrolling_text_app_button" />
+
+    <Button
+        android:id="@+id/on_save_instance_state_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/on_save_instance_state_button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shopping_list_app_button" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

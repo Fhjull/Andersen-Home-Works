@@ -22,19 +22,25 @@
     </fragment>
     <fragment
         android:id="@+id/secondLessonFragment"
-        android:name="ru.dillab.andersenhomeworks.ui.secondlesson.SecondLessonFragment"
-        android:label="@string/second_lesson_fragment_title"
-        tools:layout="@layout/fragment_second_lesson">
+        android:name="ru.dillab.andersenhomeworks.ui.secondhw.SecondHomeWorkFragment"
+        android:label="@string/second_home_work_fragment_title"
+        tools:layout="@layout/fragment_second_home_work">
         <action
             android:id="@+id/action_secondLessonFragment_to_yourFirstInteractiveUiFragment"
             app:destination="@id/yourFirstInteractiveUiFragment" />
         <action
             android:id="@+id/action_secondLessonFragment_to_scrollingTextAppFragment"
             app:destination="@id/scrollingTextAppFragment" />
+        <action
+            android:id="@+id/action_secondLessonFragment_to_shoppingListActivity"
+            app:destination="@id/shoppingListActivity" />
+        <action
+            android:id="@+id/action_secondLessonFragment_to_onSaveInstateStateFragment"
+            app:destination="@id/onSaveInstateStateFragment" />
     </fragment>
     <fragment
         android:id="@+id/yourFirstInteractiveUiFragment"
-        android:name="ru.dillab.andersenhomeworks.ui.secondlesson.yourfirstinteractiveui.YourFirstInteractiveUiFragment"
+        android:name="ru.dillab.andersenhomeworks.ui.secondhw.yourfirstinteractiveui.YourFirstInteractiveUiFragment"
         android:label="@string/your_first_interactive_ui_fragment_title"
         tools:layout="@layout/fragment_your_first_interactive_ui" >
         <action
@@ -43,14 +49,14 @@
     </fragment>
     <fragment
         android:id="@+id/scrollingTextAppFragment"
-        android:name="ru.dillab.andersenhomeworks.ui.secondlesson.scrollingtextapp.ScrollingTextAppFragment"
+        android:name="ru.dillab.andersenhomeworks.ui.secondhw.scrollingtextapp.ScrollingTextAppFragment"
         android:label="@string/scrolling_text_app_fragment_title"
         tools:layout="@layout/fragment_scrolling_text_app" />
     <fragment
         android:id="@+id/thirdLessonFragment"
-        android:name="ru.dillab.andersenhomeworks.ui.thirdlesson.ThirdLessonFragment"
-        android:label="@string/third_lesson_fragment_title"
-        tools:layout="@layout/fragment_third_lesson">
+        android:name="ru.dillab.andersenhomeworks.ui.thirdhw.ThirdHomeWorkFragment"
+        android:label="@string/third_home_work_fragment_title"
+        tools:layout="@layout/fragment_third_home_work">
         <action
             android:id="@+id/action_thirdLessonFragment_to_secondLessonFirstTaskFragment"
             app:destination="@id/secondLessonFirstTaskFragment" />
@@ -60,22 +66,37 @@
     </fragment>
     <fragment
         android:id="@+id/secondLessonFirstTaskFragment"
-        android:name="ru.dillab.andersenhomeworks.ui.thirdlesson.firsttask.ThirdLessonFirstTaskFragment"
-        android:label="@string/third_lesson_first_task_fragment_title"
-        tools:layout="@layout/fragment_third_lesson_first_task" />
+        android:name="ru.dillab.andersenhomeworks.ui.thirdhw.firsttask.ThirdHomeWorkFirstTaskFragment"
+        android:label="@string/third_home_work_first_task_fragment_title"
+        tools:layout="@layout/fragment_third_home_work_first_task" />
     <fragment
         android:id="@+id/secondLessonSecondTaskFragment"
-        android:name="ru.dillab.andersenhomeworks.ui.thirdlesson.secondtask.ThirdLessonSecondTaskFragment"
-        android:label="@string/third_lesson_second_task_fragment_title"
-        tools:layout="@layout/fragment_third_lesson_second_task" />
+        android:name="ru.dillab.andersenhomeworks.ui.thirdhw.secondtask.ThirdHomeWorkSecondTaskFragment"
+        android:label="@string/third_home_work_second_task_fragment_title"
+        tools:layout="@layout/fragment_third_home_work_second_task" />
     <activity
         android:id="@+id/helloToastActivity"
-        android:name="ru.dillab.andersenhomeworks.ui.secondlesson.yourfirstinteractiveui.HelloToastActivity"
+        android:name="ru.dillab.andersenhomeworks.ui.secondhw.yourfirstinteractiveui.HelloToastActivity"
         android:label="activity_hello_toast"
         tools:layout="@layout/activity_hello_toast" />
     <fragment
         android:id="@+id/clocksFragment"
-        android:name="ru.dillab.andersenhomeworks.ui.fourthlesson.ClocksFragment"
-        android:label="fragment_clocks"
+        android:name="ru.dillab.andersenhomeworks.ui.fourthhw.ClocksFragment"
+        android:label="@string/fourth_home_work_fragment_title"
         tools:layout="@layout/fragment_clocks" />
+    <activity
+        android:id="@+id/shoppingListActivity"
+        android:name="ru.dillab.andersenhomeworks.ui.secondhw.shoppinglistapp.ShoppingListActivity"
+        android:label="activity_shopping_list"
+        tools:layout="@layout/activity_shopping_list" />
+    <activity
+        android:id="@+id/addItemActivity"
+        android:name="ru.dillab.andersenhomeworks.ui.secondhw.shoppinglistapp.AddItemActivity"
+        android:label="activity_add_item"
+        tools:layout="@layout/activity_add_item" />
+    <fragment
+        android:id="@+id/onSaveInstateStateFragment"
+        android:name="ru.dillab.andersenhomeworks.ui.secondhw.onsaveinstancestate.OnSaveInstateStateFragment"
+        android:label="@string/on_save_instance_state_fragment_title"
+        tools:layout="@layout/fragment_on_save_instate_state" />
 </navigation>
