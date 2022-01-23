@@ -37,12 +37,15 @@
         <action
             android:id="@+id/action_secondLessonFragment_to_onSaveInstateStateFragment"
             app:destination="@id/onSaveInstateStateFragment" />
+        <action
+            android:id="@+id/action_secondLessonFragment_to_implicitIntentsFragment"
+            app:destination="@id/implicitIntentsFragment" />
     </fragment>
     <fragment
         android:id="@+id/yourFirstInteractiveUiFragment"
         android:name="ru.dillab.andersenhomeworks.ui.secondhw.yourfirstinteractiveui.YourFirstInteractiveUiFragment"
         android:label="@string/your_first_interactive_ui_fragment_title"
-        tools:layout="@layout/fragment_your_first_interactive_ui" >
+        tools:layout="@layout/fragment_your_first_interactive_ui">
         <action
             android:id="@+id/action_yourFirstInteractiveUiFragment_to_helloToastActivity"
             app:destination="@id/helloToastActivity" />
@@ -99,4 +102,9 @@
         android:name="ru.dillab.andersenhomeworks.ui.secondhw.onsaveinstancestate.OnSaveInstateStateFragment"
         android:label="@string/on_save_instance_state_fragment_title"
         tools:layout="@layout/fragment_on_save_instate_state" />
+    <fragment
+        android:id="@+id/implicitIntentsFragment"
+        android:name="ru.dillab.andersenhomeworks.ui.secondhw.implicitintents.ImplicitIntentsFragment"
+        android:label="@string/implicit_intents_fragment_title"
+        tools:layout="@layout/fragment_implicit_intents" />
 </navigation>

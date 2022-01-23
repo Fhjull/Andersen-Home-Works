@@ -15,6 +15,7 @@
     <string name="scrolling_text_app_button_text">Android fundamentals 01.3\nScrolling text App</string>
     <string name="shopping_list_app_button_text">Android fundamentals 02.2\nCode Challenge\nShopping-List App</string>
     <string name="on_save_instance_state_button_text">Android fundamentals 02.2\nHome Work - onSaveInstanceState()</string>
+    <string name="implicit_intents_button_text">Android fundamentals 02.3\nImplicit Intents App</string>
 
     <!--    your_first_interactive_ui_fragment  -->
     <string name="your_first_interactive_ui_fragment_title">Hello Toast</string>
@@ -73,6 +74,15 @@ This volume starts with the first new Beatle song, “Free as a Bird” (based o
     <string name="on_save_instance_state_fragment_title">onSaveInstanceState()</string>
     <string name="on_save_instance_state_count_button_text">Count</string>
 
+    <!--    implicit_intents_fragment   -->
+    <string name="implicit_intents_fragment_title">Implicit Intents App</string>
+    <string name="open_website_button_text">Open Website</string>
+    <string name="open_location_button_text">Open Location</string>
+    <string name="share_text_button_text">Share text</string>
+    <string name="website_edittext_default_text">http://developer.android.com</string>
+    <string name="location_edittext_default_text">Golden Gate Bridge</string>
+    <string name="share_edittext_default_text">\'Twas brillig and the slithy toves</string>
+
     <!--    third_lesson_fragment  -->
     <string name="third_home_work_fragment_title">Домашняя работа №3</string>
     <string name="third_home_work_fragment_upper_text">Темы: Главные View (Button, ImageView, EditText, TextView) Main containers, ConstraintLayout</string>
@@ -89,5 +99,7 @@ This volume starts with the first new Beatle song, “Free as a Bird” (based o
 
     <!--    fourth_home_work_fragment    -->
     <string name="fourth_home_work_fragment_title">Домашняя работа №4</string>
+    <string name="take_picture_button_text">Take a picture</string>
+    <string name="locate_store_button_text">Locate Store</string>
 
 </resources>

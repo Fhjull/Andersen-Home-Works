@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".ui.secondhw.shoppinglistapp.ShoppingListActivity">
 
     <Button
@@ -17,10 +18,20 @@
 
     <TextView
         android:id="@+id/shop_text_view"
-        android:textSize="30sp"
-        android:textStyle="bold"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/locate_store_edittext"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:id="@+id/locate_store_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locate_store_button_text" />
 
 </LinearLayout>

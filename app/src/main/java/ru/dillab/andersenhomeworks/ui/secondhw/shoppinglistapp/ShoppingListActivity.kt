@@ -1,9 +1,12 @@
 package ru.dillab.andersenhomeworks.ui.secondhw.shoppinglistapp
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import ru.dillab.andersenhomeworks.R
 import ru.dillab.andersenhomeworks.databinding.ActivityShoppingListBinding
 
@@ -38,7 +41,23 @@ class ShoppingListActivity : AppCompatActivity() {
             binding.shopTextView.text = shoppingList
         }
 
+        binding.locateStoreButton.setOnClickListener { locateStore() }
+
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    }
+
+    private fun locateStore() {
+        val particularStore = binding.locateStoreEdittext.text.toString()
+        val addressUri = Uri.parse("geo:0,0?q=$particularStore")
+        Intent(Intent.ACTION_VIEW, addressUri).also {
+            if (it.resolveActivity(packageManager) != null) {
+            // try {
+                startActivity(it)
+            // } catch (e: ActivityNotFoundException) {
+            } else {
+                Toast.makeText(this, "Cannot open map", Toast.LENGTH_LONG).show()
+            }
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {

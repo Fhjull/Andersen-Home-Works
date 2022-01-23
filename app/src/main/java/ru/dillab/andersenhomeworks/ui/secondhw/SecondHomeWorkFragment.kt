@@ -30,6 +30,7 @@ class SecondHomeWorkFragment : Fragment() {
         binding.scrollingTextAppButton.setOnClickListener { navigateToScrollingTextAppFragment() }
         binding.shoppingListAppButton.setOnClickListener { navigateToShoppingListAppActivity() }
         binding.onSaveInstanceStateButton.setOnClickListener { navigateToOnSaveInstanceSaveFragment() }
+        binding.implicitIntentsButton.setOnClickListener { navigateToImplicitIntentsFragment() }
     }
 
     private fun navigateToYourFirstInteractiveUiFragment() {
@@ -48,6 +49,10 @@ class SecondHomeWorkFragment : Fragment() {
 
     private fun navigateToOnSaveInstanceSaveFragment() {
         findNavController().navigate(R.id.action_secondLessonFragment_to_onSaveInstateStateFragment)
+    }
+
+    private fun navigateToImplicitIntentsFragment() {
+        findNavController().navigate(R.id.action_secondLessonFragment_to_implicitIntentsFragment)
     }
 
     override fun onDestroyView() {
