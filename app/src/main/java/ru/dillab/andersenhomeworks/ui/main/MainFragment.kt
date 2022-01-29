@@ -1,5 +1,6 @@
 package ru.dillab.andersenhomeworks.ui.main
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import ru.dillab.andersenhomeworks.R
 import ru.dillab.andersenhomeworks.databinding.FragmentMainBinding
+import ru.dillab.andersenhomeworks.ui.fifthhw.ContactsAppActivity
 
 class MainFragment : Fragment() {
     private var _binding: FragmentMainBinding? = null
@@ -25,7 +27,8 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.secondHomeWorkButton.setOnClickListener { navigateToSecondHomeWorkFragment() }
         binding.thirdHomeWorkButton.setOnClickListener { navigateToThirdHomeWorkFragment() }
-        binding.forthHomeWorkButton.setOnClickListener { navigateToClocksFragment() }
+        binding.fourthHomeWorkButton.setOnClickListener { navigateToClocksFragment() }
+        binding.fifthHomeWorkButton.setOnClickListener { navigateToContactsAppActivity() }
     }
 
     private fun navigateToSecondHomeWorkFragment() {
@@ -38,6 +41,12 @@ class MainFragment : Fragment() {
 
     private fun navigateToClocksFragment() {
         findNavController().navigate(R.id.action_mainFragment_to_clocksFragment)
+    }
+
+    private fun navigateToContactsAppActivity() {
+        Intent(context, ContactsAppActivity::class.java).also {
+            startActivity(it)
+        }
     }
 
     override fun onDestroyView() {

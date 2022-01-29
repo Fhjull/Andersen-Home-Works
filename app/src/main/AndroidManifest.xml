@@ -12,11 +12,14 @@
         </intent>
         <intent>
             <action android:name="android.intent.action.VIEW" />
+
             <data android:scheme="http" />
         </intent>
         <intent>
             <action android:name="android.intent.action.VIEW" />
+
             <data android:scheme="geo" />
+
             <category android:name="android.intent.category.DEFAULT" />
         </intent>
     </queries>
@@ -28,6 +31,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndersenHomeWorks">
+        <activity
+            android:name=".ui.fifthhw.ContactsAppActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.secondhw.shoppinglistapp.AddItemActivity"
             android:exported="false" />

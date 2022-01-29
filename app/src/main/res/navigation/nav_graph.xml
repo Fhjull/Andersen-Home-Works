@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_mainFragment_to_clocksFragment"
             app:destination="@id/clocksFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_contactsAppActivity"
+            app:destination="@id/contactsAppActivity" />
     </fragment>
     <fragment
         android:id="@+id/secondLessonFragment"
@@ -107,4 +110,9 @@
         android:name="ru.dillab.andersenhomeworks.ui.secondhw.implicitintents.ImplicitIntentsFragment"
         android:label="@string/implicit_intents_fragment_title"
         tools:layout="@layout/fragment_implicit_intents" />
+    <activity
+        android:id="@+id/contactsAppActivity"
+        android:name="ru.dillab.andersenhomeworks.ui.fifthhw.ContactsAppActivity"
+        android:label="activity_contacts_app"
+        tools:layout="@layout/activity_contacts_app" />
 </navigation>
