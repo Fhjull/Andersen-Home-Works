@@ -1,10 +1,10 @@
 package ru.dillab.andersenhomeworks.ui.secondhw.shoppinglistapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import ru.dillab.andersenhomeworks.R
 import ru.dillab.andersenhomeworks.databinding.ActivityAddItemBinding
 

@@ -32,6 +32,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndersenHomeWorks">
         <activity
+            android:name=".ui.sixthhw.RcViewContactsAppActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.fifthhw.ContactsAppActivity"
             android:exported="false" />
         <activity

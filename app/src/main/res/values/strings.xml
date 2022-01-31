@@ -8,6 +8,7 @@
     <string name="third_home_work_button_text">Домашняя работа №3</string>
     <string name="fourth_home_work_button_text">Домашняя работа №4</string>
     <string name="fifth_home_work_button_text">Домашняя работа №5</string>
+    <string name="sixth_home_work_button_text">Домашняя работа №6</string>
 
     <!--    second_lesson_fragment  -->
     <string name="second_home_work_fragment_title">Домашняя работа №2</string>
@@ -104,8 +105,13 @@ This volume starts with the first new Beatle song, “Free as a Bird” (based o
     <string name="fourth_home_work_fragment_title">Домашняя работа №4</string>
 
     <!--    fifth_home_work     -->
+    <string name="fifth_home_work_contacts_fragment_title">Домашняя работа №5</string>
     <string name="first_and_second_names">%s %s</string>
     <string name="contact_details_edit_button_text">Edit contact</string>
     <string name="contact_details_save_button_text">Save</string>
+
+    <!--    sixth_home_work     -->
+    <string name="sixth_home_work_contacts_fragment_title">Домашняя работа №6</string>
+    <string name="sixth_home_work_details_fragment_title">Детали контакта</string>
 
 </resources>

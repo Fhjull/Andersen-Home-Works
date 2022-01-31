@@ -9,6 +9,7 @@ class ContactsViewModel : ViewModel() {
     private val _contacts = MutableLiveData<List<Contact>>()
     val contacts: LiveData<List<Contact>> = _contacts
 
+    // This variable is for transferring which contact is chose between fragments
     private var _currentContactIndex = MutableLiveData<Int>()
     val currentContactIndex: LiveData<Int> = _currentContactIndex
 

@@ -1,30 +1,27 @@
-package ru.dillab.andersenhomeworks
+package ru.dillab.andersenhomeworks.ui.sixthhw
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
+import ru.dillab.andersenhomeworks.R
 
-class MainActivity : AppCompatActivity(R.layout.activity_main) {
+class RcViewContactsAppActivity : AppCompatActivity(R.layout.activity_rc_view_contacts) {
     private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Getting a reference to the nav_host_fragment and assign it to the navController property
-        // This is needed to construct our navigation as we specified in nav_graph.xml
         val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+            supportFragmentManager.findFragmentById(R.id.rc_view_contacts_nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
 
-        // Adds up button (back button) in title (top left corner)
         setupActionBarWithNavController(navController)
     }
 
-    // This method allows to handle the up button.
-    // Needed with setupActionBarWithNavController(navController)
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
+
 }

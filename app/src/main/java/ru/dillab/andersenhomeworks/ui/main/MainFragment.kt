@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import ru.dillab.andersenhomeworks.R
 import ru.dillab.andersenhomeworks.databinding.FragmentMainBinding
 import ru.dillab.andersenhomeworks.ui.fifthhw.ContactsAppActivity
+import ru.dillab.andersenhomeworks.ui.sixthhw.RcViewContactsAppActivity
 
 class MainFragment : Fragment() {
     private var _binding: FragmentMainBinding? = null
@@ -29,6 +30,7 @@ class MainFragment : Fragment() {
         binding.thirdHomeWorkButton.setOnClickListener { navigateToThirdHomeWorkFragment() }
         binding.fourthHomeWorkButton.setOnClickListener { navigateToClocksFragment() }
         binding.fifthHomeWorkButton.setOnClickListener { navigateToContactsAppActivity() }
+        binding.sixthHomeWorkButton.setOnClickListener { navigateToRcViewContactsAppActivity() }
     }
 
     private fun navigateToSecondHomeWorkFragment() {
@@ -45,6 +47,12 @@ class MainFragment : Fragment() {
 
     private fun navigateToContactsAppActivity() {
         Intent(context, ContactsAppActivity::class.java).also {
+            startActivity(it)
+        }
+    }
+
+    private fun navigateToRcViewContactsAppActivity() {
+        Intent(context, RcViewContactsAppActivity::class.java).also {
             startActivity(it)
         }
     }

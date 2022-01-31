@@ -26,6 +26,8 @@ class ContactsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        activity?.title = resources.getString(R.string.fifth_home_work_contacts_fragment_title)
+
         sharedViewModel.contacts.observe(viewLifecycleOwner) {
             val contact1 = it[0]
             val contact2 = it[1]
